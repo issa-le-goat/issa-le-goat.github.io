@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --Terracotta: 204, 104, 65;
+    --beige: 235, 210, 179;
+    --bleu: 39, 51, 63;
+}
+
+.sercvices {
+    margin-bottom: 70px;
+    height: 100vh;
+
+}
+
+.S-Titre {
+    font-family: 'Playfair Display', 'Lora', 'Times New Roman', serif; 
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(var(--Terracotta), 1);
+    margin-bottom: 50px;
+}
+
+.S-Titre .Sous-Titre {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    text-transform: uppercase;
+    color: #a68b6d;
+}
+
+.Cartes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    padding: 5px;
+    padding-bottom: 25px;
+}
+
+.First-3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    padding: 5px
+}
+
+.Pres {
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 19%;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.Pres .img {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.Pres .img img {
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.Pres:hover img {
+    transform: scale(1.15);
+}
+
+.Pres .Des {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Pres .Des h4 {
+    font-size: 40px;
+    justify-self: center;
+    color: rgba(var(--Terracotta), 1);
+}

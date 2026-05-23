@@ -1,0 +1,197 @@
+/* 1. IMPORTS DES POLICES */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+html, body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+html, body {
+    overflow-x: hidden; /* Empêche UNIQUEMENT le scroll horizontal */
+    margin: 0;          /* Enlève la petite bordure blanche par défaut */
+    padding: 0;
+}
+
+.header {
+    z-index: 1000;
+}
+
+.header svg {
+    fill: rgb(var(--Terracotta)); /* Remplit le logo avec votre couleur */
+}
+
+:root {
+    --Terracotta: 204, 104, 65;
+    --beige: 235, 210, 179;
+    --bleu: 39, 51, 63;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(250, 248, 245);
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 248, 245);
+    color: black;
+    padding: 0 200px;
+    height: 100px; /* Taille pro standard */
+}
+
+.header h1 {
+    color: rgb(var(--Terracotta));
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.left a {
+    color: black;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.left a:hover {
+    opacity: 0.8;
+}
+
+.insta svg {
+    fill: rgb(var(--Terracotta)); /* Ta couleur fétiche */
+    display: block;
+    width: 30px; /* Contrôle la taille ici */
+    height: auto;
+}
+
+.Acceuil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 250px 0px;
+    margin-bottom: 200px;
+    padding-top: 350px;
+}
+
+.Center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.Acceuil h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Under-Title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #a68b6d;
+}
+
+.Line {
+    height: 0.5px;
+    width: 60px;
+    background-color: rgba(var(--Terracotta), 0.6);
+}
+
+.Text {
+    color: #444444;
+    font-weight: 300; /* Poids léger pour garder la finesse */
+    line-height: 1.8;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* 6. BOUTONS */
+.Boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Boutons button {
+    border: none;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.Serv {
+    background-color: rgb(var(--Terracotta));
+    color: white;
+    border: 2px solid rgb(var(--Terracotta)) !important;
+}
+
+.Serv:hover {
+    background-color: transparent;
+    color: rgb(var(--Terracotta));
+}
+
+.RDV {
+    background-color: transparent;
+    color: rgb(var(--Terracotta));
+    border: 2px solid rgb(var(--beige)) !important;
+}
+
+.RDV:hover {
+    background-color: rgb(var(--beige));
+}
+
+/* Menu Burger (Placeholder) 
+.burger {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}*/

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --Terracotta: 204, 104, 65;
+    --beige: 235, 210, 179;
+    --bleu: 39, 51, 63;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(61, 48, 41);
+    border-top: solid 3px rgb(var(--Terracotta));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 50px;
+}
+
+.uper {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.uper .part {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    text-align: start;
+    gap: 15px;
+}
+
+.uper h3 {
+    color: rgb(235, 210, 179);
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.uper p {
+    width: 100%;
+    color: rgb(235, 210, 179);
+    font-weight: 300; /* Poids léger pour garder la finesse */
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.LogoF {
+    display: flex;
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(76, 54, 44);
+    outline: solid 1px rgb(var(--Terracotta));
+    justify-content: center;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+}
+
+.LogoF svg {
+    fill: rgb(var(--Terracotta));
+    width: 20px;
+    height: auto;
+}
+
+.IntsaF:hover a{
+    opacity: 0.8;
+    color: rgb(var(--beige));
+}
+
+.IntsaF {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.IntsaF p {
+    color: rgb(var(--Terracotta));
+    text-decoration: none;
+}
+
+.IntsaF a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: rgb(var(--Terracotta));
+    letter-spacing: -0.02em;
+    font-size: 14px;
+}
+
+.part .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.part .footer-nav h3 {
+    font-size: 20px;
+}
+
+.footer-nav .Tabs {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    color: rgb(var(--beige));
+}
+
+.footer-nav .Tabs a {
+    text-decoration: none;
+    color: rgb(var(--beige));
+}
+
+.React  a{
+    align-items: center;
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tiret {
+    width: 0px;
+    transition: all ease-in-out 0.3s;
+}
+
+.React:hover .tiret {
+    width: 30px;
+    height: 0px;
+    outline: solid 0.5px rgb(var(--Terracotta));
+}
+
+.Links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.Links a svg {
+    stroke: rgb(var(--Terracotta));
+    stroke-width: 2px;
+    fill: none;
+    width: 35px;
+    height: auto;
+}
+
+.Links a .Number svg {
+    stroke-width: 10px;
+}
+
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    border-top: solid 1px rgba(var(--beige), 0.5);
+    padding: 50px;
+    color: rgba(var(--beige), 0.5);
+}

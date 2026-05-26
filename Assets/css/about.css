@@ -13,7 +13,8 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
-    height: 90vh;
+    min-height: 90vh; /* Remplace height: 90vh */
+    height: auto;     /* Permet l'expansion */
     background-color: rgb(245, 240, 232);
 }
 
@@ -32,7 +33,7 @@
     justify-self: center;
     align-items: center;
     width: 30%;
-    height: 80vh;
+    height: auto;     /* Remplace height: 80vh */
 }
 
 .Left-Inferior {

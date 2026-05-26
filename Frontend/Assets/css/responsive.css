@@ -1,0 +1,283 @@
+/* ==========================================================================
+   Maison NASHAD - Responsive Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLETTES (Max 1024px)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .header {
+        padding: 0 32px;
+    }
+    .Acceuil {
+        padding: 150px 0;
+    }
+    .burger {
+        display: none;
+    }
+
+    .Pres {
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 28%; /* Augmenté de 19% à 28% */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+    .à-Propos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 80px; /* Crée l'espace nécessaire au bas de la section */
+    min-height: 90vh; /* Utilise min-height au lieu de height fixe */
+    height: auto; /* Permet à la section de s'agrandir */
+    background-color: rgb(245, 240, 232);
+}
+
+.Acceuil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Permet à la section de prendre toute la hauteur de l'écran */
+    padding: 120px 0 100px 0; /* Laisse un espace raisonnable pour le header fixe en haut */
+    margin-bottom: 50px; /* Réduit l'espace vide avant la section suivante */
+}
+
+/* --- Ajustement de la largeur du paragraphe --- */
+.Text {
+    color: #444444;
+    font-weight: 300; 
+    line-height: 1.8;
+    width: 65%; /* Augmenté de 50% à 65% pour que le texte soit moins écrasé en colonnes */
+    max-width: 900px; /* Limite la largeur sur les très grands écrans pour garder une bonne lisibilité */
+    margin: 0 auto;
+}
+
+/* --- Ajustement de l'espacement des boutons --- */
+.Boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Augmenté de 20px à 30px pour laisser les boutons respirer */
+}
+
+.Under-Title {
+        flex-wrap: wrap; /* Permet aux éléments de se réorganiser au lieu de déborder */
+        gap: 10px; /* Réduit l'espacement entre le texte et les lignes */
+        font-size: 14px; /* Diminue légèrement la taille de la police */
+        letter-spacing: 0.15em; /* Réduit l'écartement des lettres (précédemment 0.25em) */
+    }
+
+    .Line {
+        width: 35px; /* Raccourcit les traits de séparation (précédemment 60px) */
+    }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILES (Max 768px) - Version Compacte Verticale
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    
+    /* --- Contrainte Globale : Largeur étendue pour les textes --- */
+    .Text, .Left-Superior p, .Block p, .uper p, .Avis p {
+        max-width: 95%; 
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* --- Typographie Ajustée --- */
+    p, a, span, .Under-Title p {
+        font-size: 14px; 
+    }
+    
+    h3, h4, h5, h6, .Block h3, .S-Titre .Sous-Titre {
+        font-size: 16px;
+    }
+
+    h2, .S-Titre {
+        font-size: 24px;
+    }
+
+    .header h1, .Acceuil h1 {
+        font-size: 32px; 
+    }
+
+    /* --- En-tête & Menu Burger --- */
+    .header {
+        padding: 0 16px;
+        height: 60px; /* Réduit de 64px à 60px */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+    
+    .burger span {
+        width: 32px;
+        height: 4px;
+        background-color: rgb(var(--Terracotta));
+        border-radius: 2px;
+    }
+
+    /* --- Accueil (Hauteur Réduite) --- */
+    .Acceuil {
+        padding: 96px 0 32px 0; /* Réduit de 128px/64px pour remonter le contenu */
+    }
+
+    .Under-Title {
+        flex-direction: column;
+        gap: 8px; /* Espacement divisé par 2 (16px -> 8px) */
+    }
+    .Line {
+        display: none;
+    }
+
+    /* --- Boutons (Plus compacts) --- */
+    .Boutons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 12px; /* Réduit de 16px à 12px */
+    }
+
+    .Boutons button {
+        height: 48px; /* Hauteur réduite de 64px à 48px pour gagner de la place */
+        max-width: 256px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* --- Services & À Propos --- */
+    .Pres {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .Pres .img {
+        width: 128px; 
+        height: 128px; 
+        margin: 0 auto; 
+    }
+
+    .Left-Inferior {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px; /* Espacement vertical réduit entre les blocs */
+    }
+
+    /* --- Ajustements Section À Propos --- */
+    .à-Propos {
+        padding-bottom: 32px; /* Réduit de 64px à 32px */
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Propos-Left {
+        width: 95%; 
+        margin-top: 16px; /* Réduit de 32px à 16px */
+    }
+
+    .Propos-Left h2 {
+        font-size: 28px;
+        justify-self: center;
+    }
+
+    .Cartes .Des h4 {
+        font-size: 20px;
+    }
+
+    .Block {
+        width: 70%; /* Fixé à 70% selon vos derniers ajustements */
+        margin-top: 12px; /* Écart vertical réduit entre chaque bloc */
+    }
+
+    .Propos-Right {
+        width: 100%; 
+        height: auto;
+        margin-top: 12px; /* Réduit de 16px à 12px */
+        display: flex;
+        justify-content: center; 
+    }
+
+    .Propos-Right img {
+        display: none;
+    }
+
+    .Avis {
+        position: relative; 
+        width: 70%; /* Alignement parfait à 70% comme les .Block */
+        margin: 0 auto; 
+        left: 0;
+        bottom: 0;
+        transform: none;
+        text-align: center;
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    /* --- Footer (Espaces resserrés) --- */
+    .footer {
+        gap: 32px; /* Divisé par 2 (64px -> 32px) */
+        padding-top: 32px; /* Divisé par 2 (64px -> 32px) */
+    }
+
+    .uper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 32px; /* Écart vertical entre les blocs du footer réduit de moitié */
+    }
+
+    .uper .part {
+        width: 95%; 
+        align-items: center;
+        text-align: center;
+        gap: 8px; /* Écart titre/texte réduit de 16px à 8px */
+    }
+
+    .IntsaF {
+        justify-content: center;
+    }
+
+    .Links a {
+        justify-content: center;
+    }
+
+    .Text, .Left-Superior p, .Block p, .uper p, .Avis p {
+        width: 100%; /* Écrase les 50% de la version ordinateur */
+        max-width: 95%; 
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* --- Bas de page (Ligne et Copyright) --- */
+    .lower {
+        width: 90%; /* Étire le trait horizontal */
+        padding: 24px 0; /* Ajuste l'espacement pour le mobile */
+        margin: 0 auto; /* Centre le bloc */
+    }
+
+    .lower p {
+        width: 100%; /* Force le texte à utiliser tout l'espace disponible */
+        max-width: 100%;
+        text-align: center;
+    }
+}

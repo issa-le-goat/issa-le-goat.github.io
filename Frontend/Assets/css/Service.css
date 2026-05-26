@@ -10,8 +10,8 @@
 
 .sercvices {
     margin-bottom: 70px;
-    height: 100vh;
-
+    min-height: 100vh; /* Remplace height: 100vh */
+    height: auto;      /* Permet à la section de grandir */
 }
 
 .S-Titre {
@@ -76,7 +76,9 @@
 }
 
 .Pres .img img {
-    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintient des proportions parfaitement carrées */
+    object-fit: cover; /* Remplit l'espace sans déformer l'image */
     transition: all 0.3s ease-in-out;
 }
 

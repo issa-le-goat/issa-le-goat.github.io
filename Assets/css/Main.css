@@ -20,6 +20,9 @@ html, body {
     padding: 0;
 }
 
+.burger {
+    display: none;
+}
 .header {
     z-index: 1000;
 }
